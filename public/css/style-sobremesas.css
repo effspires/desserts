@@ -1,0 +1,68 @@
+p {
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+.intro > * + * {
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.receitas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.receitas {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.receitas:hover {
+  transform: scale(1.05);
+}
+
+article h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  span {
+    display: none;
+  }
+
+  .receitas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .receitas h2 {
+    text-align: center;
+  }
+}
