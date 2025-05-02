@@ -13,14 +13,14 @@ Este é um projeto de site estático desenvolvido em HTML que apresenta receitas
 ## Estrutura do Projeto
 
 desserts/
-└── assets/ # Contém todos os assets do projeto
-    ├── imagens # Contém a(s) imagen(s) do projeto
-    └── videos # Contém o(s) video(s) do projeto
-├── index.html # Página inicial
-├── sobremesas.html # Página de listagem de sobremesas
-├── brigadeiro.html # Página da receita especial
-├── compartilhar.html # Página de compartilhamento
-└── README.md
+- assets/ # Contém todos os assets do projeto
+    - imagens/ # Contém a(s) imagen(s) do projeto
+    - videos/ # Contém o(s) video(s) do projeto
+- index.html # Página inicial
+- sobremesas.html # Página de listagem de sobremesas
+- brigadeiro.html # Página da receita especial
+- compartilhar.html # Página de compartilhamento
+- README.md
 
 
 ## Como Utilizar
