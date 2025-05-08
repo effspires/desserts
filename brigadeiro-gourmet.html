@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadeiro Gourmet de Nozes - Cozinha Criativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #A0522D;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .divider {
+            border-top: 1px dashed #8B4513;
+            margin: 30px 0;
+        }
+        .other-recipes {
+            margin-top: 30px;
+        }
+        .other-recipes strong {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .recipe-item {
+            background-color: #f9f5f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .recipe-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .recipe-item strong {
+            color: #8B4513;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .recipe-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .contact {
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #666;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .video-container video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .recipes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .recipes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="assets/videos/video_demo.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <h1>Brigadeiro Gourmet de Nozes</h1>
+    
+    <p>Essa receita combina a cremosidade do brigadeiro com o sabor rico e levemente crocante das nozes. Os brigadeiros são enrolados em pequenas bolinhas e podem ser decorados com nozes picadas por cima, dando um toque extra de textura e sabor. É uma opção irresistível para os amantes de brigadeiro e de nozes, perfeito para servir em festas, eventos especiais ou para desfrutar em qualquer momento de indulgência.</p>
+    
+    <div class="divider"></div>
+    
+    <h2>Ingredients</h2>
+    <ul>
+        <li>1 lata de leite condensado</li>
+        <li>100g de nozes trituradas</li>
+        <li>1 colher de sopa de manteiga</li>
+        <li>Nozes picadas para decorar</li>
+    </ul>
+    
+    <h2>Modo de preparo</h2>
+    <ol>
+        <li>Em uma panela, misture o leite condensado, as nozes trituradas e a manteiga.</li>
+        <li>Leve ao fogo baixo, mexendo sempre, até obter uma massa consistente e desgrudar do fundo da panela.</li>
+        <li>Retire do fogo e deixe enfriar.</li>
+        <li>Com as mãos untadas com manteiga, faça pequenas bolinhas com a massa de brigadeiro.</li>
+        <li>Decore cada brigadeiro com uma noz picada por cima.</li>
+        <li>Sirva em formulhas de papel.</li>
+    </ol>
+    
+    <div class="divider"></div>
+    
+    <div class="other-recipes">
+        <h2>Confira outras receitas</h2>
+        <div class="recipes-grid">
+            <div class="recipe-item">
+                <img src="assets/images/mousse-limao.jpg" alt="Mousse de Limão" class="recipe-image">
+                <strong>Mousse de Limão</strong>
+            </div>
+            <div class="recipe-item">
+                <img src="assets/images/caipirinha.jpg" alt="Caipirinha" class="recipe-image">
+                <strong>Caipirinha</strong>
+            </div>
+            <div class="recipe-item">
+                <img src="assets/images/strogonoff.jpg" alt="Strogonoff de Carne" class="recipe-image">
+                <strong>Strogonoff de Carne</strong>
+            </div>
+            <div class="recipe-item">
+                <img src="assets/images/bombom.jpg" alt="Bombom de Travessa" class="recipe-image">
+                <strong>Bombom de Travessa</strong>
+            </div>
+            <div class="recipe-item">
+                <img src="assets/images/cappuccino.jpg" alt="Cappuccino Caseiro" class="recipe-image">
+                <strong>Cappuccino Caseiro</strong>
+            </div>
+            <div class="recipe-item">
+                <img src="assets/images/file-parmegiana.jpg" alt="Filé de Fango à Parmegiana" class="recipe-image">
+                <strong>Filé de Fango à Parmegiana</strong>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <p><strong>Eudoveço Fictício, 100, Cidade Fictícia, Estado</strong></p>
+        <p><em>E-mail: jorge@argus-academy.com</em></p>
+        <p><em>Telefone: (11) 91234-5678</em></p>
+    </div>
+    
+    <div class="copyright">
+        <p>© 2023 Cozinha Criativa. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
