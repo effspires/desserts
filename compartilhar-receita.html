@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compartilhe sua receita com a Cozinha Criativa.">
+    <meta name="author" content="Codans - Bootcamp Cozinha Criativa - Aluno André">
+
+
+    <!-- metatags Open Graph (OG) para ilustrar informações da página quando ela for compartilhada em redes sociais -->
+    <meta property="og:title" content="Compartilhe sua receita favorita!" />
+    <meta property="og:description"
+        content="Envie sua receita deliciosa para aparecer em nosso site. Simples, rápido e gratuito!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fspires.com.br/compartilhar-receita.html" />
+    <meta property="og:image" content="https://fspires.com.br/assets/images/banner_compartilhar_receita.jpg" />
+    <meta property=" og:image:alt" content="Imagem dos ingredientes de uma receita sendo compartilhada" />
+
+    <title>Adicionar Receita | Cozinha Criativa</title>
+
+    <!-- Dados estruturados JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Compartilhar Receita",
+      "description": "Página para envio de receitas pelos usuários",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cozinha Criativa"
+      }
+    }
+    </script>
+
+</head>
+
+
+
+<body style="margin: 0; padding: 0; box-sizing: border-box;">
+
+    <header>
+        <!-- criando uma página com html puro, usando table, com apenas um "style" direto no body. -->
+        <table width="70.5%" border="0" align="center" cellpadding="0">
+            <tr>
+                <td align="left">
+                    <a href="/"><img src="./assets/images/logo.png" alt="Logo Cozinha Criativa" width="300"
+                            height="300" /></a>
+                </td>
+                <td align="right">
+                    <nav>
+                        <a href="./sobremesas.html">Sobremesas</a> |
+                        <a href="#">Carnes</a> |
+                        <a href="#">Massas</a> |
+                        <a href="#">Bebidas</a> |
+                        <a href="./compartilhar-receita.html">Compartilhar Receita</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+
+
+
+    <main>
+
+        <table width="70.5%" border="0" align="center" cellpadding="0">
+            <tr>
+                <td align="center" height="450">
+                    <!-- mantém altura fixa da imagem, esticando-a ou encolhendo-a conforme se aumenta ou diminui a largura da página -->
+
+                    <img class="banner" src="./assets/images/banner_compartilhar_receita.jpg"
+                        alt="Imagem dos ingredientes de uma receita sendo compartilhada" width="100%" height="100%" />
+                </td>
+            </tr>
+
+
+            <tr>
+                <td align="left">
+                    <br>
+                    <article>
+                        Compartilhe sua receita especial! Nesta página, você tem a oportunidade de adicionar a sua
+                        própria receita à Cozinha Criativa. Compartilhe seus pratos favoritos e inspire outros
+                        entusiastas culinários. Deixe sua marca na comunidade gastronônica, mostrando sua
+                        criatividade na cozinha. Compartilhe sua paixão pela culinária com o mundo!
+                    </article>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td>
+                    <form method="GET" action="/">
+                        <!-- usando get para testar sem um servidor -->
+
+
+                        <table width="100%" border="0" align="center" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <br>
+                                        <hr />
+                                        <h1>Compartilhar minha receita</h1>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td width="50%">
+                                        <label for="nome_receita">Nome Receita</label>
+                                        <br>
+                                        <input type="text" id="nome_receita" name="nome_receita" required>
+                                    </td>
+                                    <td>
+                                        <label for="categoria">Categoria</label>
+                                        <br>
+                                        <select name="categoria" id="categoria">
+                                            <option value="sobremesa" selected>Sobremesa</option>
+                                            <option value="carne">Carne</option>
+                                            <option value="massa">Massa</option>
+                                            <option value="bebida">Bebida</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <label for="tempo_preparo">Tempo de Preparo</label>
+                                        <br>
+                                        <input type="text" name="tempo_preparo" id="tempo_preparo"
+                                            placeholder="ex: 1h 30min">
+                                    </td>
+                                    <td>
+                                        <label for="dificuldade">Dificuldade</label>
+                                        <br>
+                                        <select name="dificuldade" id="dificuldade">
+                                            <option value="facil">Fácil</option>
+                                            <option value="medio" selected>Médio</option>
+                                            <option value="difício">Difícil</option>
+                                            <option value="bebida">Bebida</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <label for="autor">Nome do Autor</label>
+                                        <br>
+                                        <input type="text" id="autor" name="autor" required>
+                                    </td>
+                                    <td>
+                                        <label for="email">E-mail do Autor</label>
+                                        <br>
+                                        <input type="email" id="email" name="email" required>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="ingredientes">Ingredientes</label>
+                                        <br>
+                                        <textarea name="ingredientes" id="ingredientes" rows="5" cols="70" required
+                                            minlength="20"></textarea>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="modo_preparo">Modo de Preparo</label>
+                                        <br>
+                                        <textarea name="modo_preparo" id="modo_preparo" rows="5" cols="70" required
+                                            minlength="20"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                            <tr>
+                                <td width="50%">
+                                    Imagem da Receita
+                                    <br>
+                                    <input type="file" name="imagem" id="imagem" required>
+                                </td>
+                                <td align="right">
+                                    <!-- <input type="submit" name="submit" value="Enviar"> -->
+                                    <button type="submit" name="submit">Enviar</button>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+
+
+
+    <footer>
+        <div align="center">
+            <address>
+                <p><i>Endereço Fictício, 100, Cidade Fictícia, Estado</i></p>
+                <p><i>E-mail: jorge@argus-academy.com</i></p>
+                <p><i>Telefone: (11) 91234-5678</i></p>
+            </address>
+            
+            <p>
+                <i>&copy; 2023 Cozinha Criativa. Todos os direitos reservados.</i>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
